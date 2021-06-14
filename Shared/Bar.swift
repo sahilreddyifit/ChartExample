@@ -50,18 +50,20 @@ struct Line: UIViewRepresentable {
         chart.isExclusiveTouch = false
         
 //        chart.legend.enabled = false
+    
+        
+        let rightAxis = chart.rightAxis
+        rightAxis.labelTextColor = #colorLiteral(red: 0.6327821612, green: 0.6473567486, blue: 0.668708086, alpha: 1)
+        chart.rightAxis.labelFont = UIFont(name: "GillSans", size: 10)!
+        rightAxis.axisMaximum = 25
+        rightAxis.axisMinimum = 0
+        rightAxis.granularityEnabled = false
 
         chart.leftAxis.enabled = false
         chart.leftAxis.spaceTop = 0.4
         chart.leftAxis.spaceBottom = 0.4
         chart.xAxis.enabled = false
 
-        //
-        chart.rightAxis.labelTextColor = #colorLiteral(red: 0.6327821612, green: 0.6473567486, blue: 0.668708086, alpha: 1)
-        chart.rightAxis.labelFont = UIFont(name: "GillSans", size: 10)!
-        chart.data = addData()
-
-        
         return chart
     }
     
