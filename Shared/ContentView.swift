@@ -11,24 +11,6 @@ import Charts
 
 struct ContentView: View {
     var body: some View {
-        //        MultiLineChartView(data: ChartLine.data,
-        //                           title: "Workout",
-        //                           legend: "Legend",
-        //                           style: Style.multiStyle,
-        //                           form: ChartForm.detail,
-        //                           rateValue: 57,
-        //                           dropShadow: true,
-        //                           valueSpecifier: "ValueSpecifier")
-        
-        //        Bar(entries: [
-        //            //x - position of a bar, y - height of a bar
-        //            BarChartDataEntry(x: 1, y: 1),
-        //            BarChartDataEntry(x: 2, y: 1),
-        //            BarChartDataEntry(x: 3, y: 1),
-        //            BarChartDataEntry(x: 4, y: 1),
-        //            BarChartDataEntry(x: 5, y: 1)
-        //
-        //        ])
         VStack {
             Spacer()
             HStack {

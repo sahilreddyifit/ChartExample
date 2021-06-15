@@ -15,8 +15,8 @@
 		E311B4C726778F6E00D0D020 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E311B4B126778F6E00D0D020 /* Assets.xcassets */; };
 		E311B4D52677905900D0D020 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E311B4D42677905900D0D020 /* SwiftUICharts */; };
 		E311B4D82677995400D0D020 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E311B4D72677995400D0D020 /* Charts */; };
-		E311B4DA267799C000D0D020 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Bar.swift */; };
-		E311B4DB267799C000D0D020 /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Bar.swift */; };
+		E311B4DA267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
+		E311B4DB267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		E311B4BE26778F6E00D0D020 /* ChartExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E311B4C026778F6E00D0D020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E311B4C126778F6E00D0D020 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		E311B4D9267799C000D0D020 /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		E311B4D9267799C000D0D020 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			children = (
 				E311B4AF26778F6C00D0D020 /* ChartExampleApp.swift */,
 				E311B4B026778F6C00D0D020 /* ContentView.swift */,
-				E311B4D9267799C000D0D020 /* Bar.swift */,
+				E311B4D9267799C000D0D020 /* Line.swift */,
 				E311B4B126778F6E00D0D020 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -204,7 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4C426778F6E00D0D020 /* ContentView.swift in Sources */,
-				E311B4DA267799C000D0D020 /* Bar.swift in Sources */,
+				E311B4DA267799C000D0D020 /* Line.swift in Sources */,
 				E311B4C226778F6E00D0D020 /* ChartExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4C526778F6E00D0D020 /* ContentView.swift in Sources */,
-				E311B4DB267799C000D0D020 /* Bar.swift in Sources */,
+				E311B4DB267799C000D0D020 /* Line.swift in Sources */,
 				E311B4C326778F6E00D0D020 /* ChartExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
