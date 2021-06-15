@@ -17,6 +17,7 @@
 		E311B4D82677995400D0D020 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E311B4D72677995400D0D020 /* Charts */; };
 		E311B4DA267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
 		E311B4DB267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
+		E3DEF76B2679219D000E485E /* SciChart in Frameworks */ = {isa = PBXBuildFile; productRef = E3DEF76A2679219D000E485E /* SciChart */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4D52677905900D0D020 /* SwiftUICharts in Frameworks */,
+				E3DEF76B2679219D000E485E /* SciChart in Frameworks */,
 				E311B4D82677995400D0D020 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +119,7 @@
 			packageProductDependencies = (
 				E311B4D42677905900D0D020 /* SwiftUICharts */,
 				E311B4D72677995400D0D020 /* Charts */,
+				E3DEF76A2679219D000E485E /* SciChart */,
 			);
 			productName = "ChartExample (iOS)";
 			productReference = E311B4B626778F6E00D0D020 /* ChartExample.app */;
@@ -168,6 +171,7 @@
 			packageReferences = (
 				E311B4D32677905900D0D020 /* XCRemoteSwiftPackageReference "ChartView" */,
 				E311B4D62677995400D0D020 /* XCRemoteSwiftPackageReference "Charts" */,
+				E3DEF7692679219D000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */,
 			);
 			productRefGroup = E311B4B726778F6E00D0D020 /* Products */;
 			projectDirPath = "";
@@ -475,6 +479,14 @@
 				minimumVersion = 4.0.1;
 			};
 		};
+		E3DEF7692679219D000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ABTSoftware/SciChart-SP.git";
+			requirement = {
+				kind = revision;
+				revision = 97e369c05416a57b4feddff7eb3a2f846c4605cb;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -487,6 +499,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E311B4D62677995400D0D020 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		E3DEF76A2679219D000E485E /* SciChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DEF7692679219D000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */;
+			productName = SciChart;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

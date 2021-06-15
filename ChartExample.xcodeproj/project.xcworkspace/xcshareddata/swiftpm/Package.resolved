@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "SciChart",
+        "repositoryURL": "https://github.com/ABTSoftware/SciChart-SP.git",
+        "state": {
+          "branch": null,
+          "revision": "97e369c05416a57b4feddff7eb3a2f846c4605cb",
+          "version": null
+        }
+      },
+      {
         "package": "swift-algorithms",
         "repositoryURL": "https://github.com/apple/swift-algorithms",
         "state": {
