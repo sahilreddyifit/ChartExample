@@ -18,6 +18,8 @@
 		E311B4DA267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
 		E311B4DB267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
 		E3DEF76B2679219D000E485E /* SciChart in Frameworks */ = {isa = PBXBuildFile; productRef = E3DEF76A2679219D000E485E /* SciChart */; };
+		E3DEF76D26793C6E000E485E /* ManualLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF76C26793C6E000E485E /* ManualLineView.swift */; };
+		E3DEF76E26793C6E000E485E /* ManualLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF76C26793C6E000E485E /* ManualLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,7 @@
 		E311B4C026778F6E00D0D020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E311B4C126778F6E00D0D020 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E311B4D9267799C000D0D020 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E3DEF76C26793C6E000E485E /* ManualLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,7 @@
 			children = (
 				E311B4AF26778F6C00D0D020 /* ChartExampleApp.swift */,
 				E311B4B026778F6C00D0D020 /* ContentView.swift */,
+				E3DEF76C26793C6E000E485E /* ManualLineView.swift */,
 				E311B4D9267799C000D0D020 /* Line.swift */,
 				E311B4B126778F6E00D0D020 /* Assets.xcassets */,
 			);
@@ -207,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DEF76D26793C6E000E485E /* ManualLineView.swift in Sources */,
 				E311B4C426778F6E00D0D020 /* ContentView.swift in Sources */,
 				E311B4DA267799C000D0D020 /* Line.swift in Sources */,
 				E311B4C226778F6E00D0D020 /* ChartExampleApp.swift in Sources */,
@@ -217,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3DEF76E26793C6E000E485E /* ManualLineView.swift in Sources */,
 				E311B4C526778F6E00D0D020 /* ContentView.swift in Sources */,
 				E311B4DB267799C000D0D020 /* Line.swift in Sources */,
 				E311B4C326778F6E00D0D020 /* ChartExampleApp.swift in Sources */,

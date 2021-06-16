@@ -11,7 +11,8 @@ import SwiftUI
 struct ChartExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ManualLineView()
+                .background(Color("chartBackground"))
         }
     }
 }
