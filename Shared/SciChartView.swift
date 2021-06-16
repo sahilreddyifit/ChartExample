@@ -10,10 +10,10 @@ import SciChart
 import SwiftUI
 
 class SciViewController: UIViewController {
+    let surface = SCIChartSurface()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let surface = SCIChartSurface()
 
         surface.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(surface)
@@ -21,31 +21,28 @@ class SciViewController: UIViewController {
         surface.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         surface.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         surface.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
-        let xAxis = SCINumericAxis()
-        xAxis.growBy = SCIDoubleRange(min: 0.05, max: 0.05)
-        let yAxis = SCINumericAxis()
-        yAxis.growBy = SCIDoubleRange(min: 0.05, max: 0.05)
-        
-        let count = 1000
-        let xValues = SCIDoubleValues(capacity: count)
-        let yValues = SCIDoubleValues(capacity: count)
-        for i in 0 ..< count {
-            let x: Double = 10.0 * Double(i) / Double(count)
-            let y: Double = sin(2 * x)
-            xValues.add(x)
-            yValues.add(y)
+
+        let lineDataSeries = SCIXyDataSeries(xType: .int, yType: .double)
+        let scatterDataSeries = SCIXyDataSeries(xType: .int, yType: .double)
+        for i in 0 ..< 70 {
+            lineDataSeries.append(x: i, y: Double(i) * 5)
+            scatterDataSeries.append(x: i, y: 400 - Double(i) * 7)
         }
         
-        let dataSeries = SCIXyDataSeries(xType: .double, yType: .double)
-        dataSeries.append(x: xValues, y: yValues)
+        let lineSeries = SCIFastLineRenderableSeries()
+        lineSeries.dataSeries = lineDataSeries
+        lineSeries.isDigitalLine = true
+        lineSeries.strokeStyle = SCISolidPenStyle(colorCode: 0xFF279B27, thickness: 2.0)
+
+        let scatterSeries = SCIFastLineRenderableSeries()
+        scatterSeries.dataSeries = scatterDataSeries
+        scatterSeries.isDigitalLine = true
+        scatterSeries.strokeStyle = SCISolidPenStyle(colorCode: 0xFF42F5EC, thickness: 2.0)
         
-        let renderableSeries = SCIFastLineRenderableSeries()
-        renderableSeries.dataSeries = dataSeries
-        
-        SCIUpdateSuspender.usingWith(surface) {
-            surface.xAxes.add(xAxis)
-            surface.yAxes.add(yAxis)
-            surface.renderableSeries.add(renderableSeries)
+        SCIUpdateSuspender.usingWith(self.surface) {
+            self.surface.xAxes.add(items: SCINumericAxis())
+            self.surface.yAxes.add(items: SCINumericAxis())
+            self.surface.renderableSeries.add(items: lineSeries, scatterSeries)
         }
     }
 }
