@@ -15,7 +15,8 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Spacer()
-                Line()
+//                Line()
+                SciChartView()
                 Spacer()
             }
             Spacer()

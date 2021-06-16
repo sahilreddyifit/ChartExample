@@ -1,17 +1,17 @@
+////
+////  ChartExampleApp.swift
+////  Shared
+////
+////  Created by Sahil Reddy on 6/14/21.
+////
 //
-//  ChartExampleApp.swift
-//  Shared
+//import SwiftUI
 //
-//  Created by Sahil Reddy on 6/14/21.
-//
-
-import SwiftUI
-
-@main
-struct ChartExampleApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+//@main
+//struct ChartExampleApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}

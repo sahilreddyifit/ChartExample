@@ -17,6 +17,13 @@
 		E311B4D82677995400D0D020 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = E311B4D72677995400D0D020 /* Charts */; };
 		E311B4DA267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
 		E311B4DB267799C000D0D020 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311B4D9267799C000D0D020 /* Line.swift */; };
+		E3DEF774267A2150000E485E /* SciChart in Frameworks */ = {isa = PBXBuildFile; productRef = E3DEF773267A2150000E485E /* SciChart */; };
+		E3DEF776267A2183000E485E /* SciChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF775267A2183000E485E /* SciChartView.swift */; };
+		E3DEF777267A2183000E485E /* SciChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF775267A2183000E485E /* SciChartView.swift */; };
+		E3DEF779267A231F000E485E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF778267A231F000E485E /* AppDelegate.swift */; };
+		E3DEF77A267A231F000E485E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF778267A231F000E485E /* AppDelegate.swift */; };
+		E3DEF77C267A232A000E485E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF77B267A232A000E485E /* SceneDelegate.swift */; };
+		E3DEF77D267A232A000E485E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DEF77B267A232A000E485E /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,9 @@
 		E311B4C026778F6E00D0D020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E311B4C126778F6E00D0D020 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E311B4D9267799C000D0D020 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		E3DEF775267A2183000E485E /* SciChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciChartView.swift; sourceTree = "<group>"; };
+		E3DEF778267A231F000E485E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3DEF77B267A232A000E485E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4D52677905900D0D020 /* SwiftUICharts in Frameworks */,
+				E3DEF774267A2150000E485E /* SciChart in Frameworks */,
 				E311B4D82677995400D0D020 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +78,9 @@
 				E311B4AF26778F6C00D0D020 /* ChartExampleApp.swift */,
 				E311B4B026778F6C00D0D020 /* ContentView.swift */,
 				E311B4D9267799C000D0D020 /* Line.swift */,
+				E3DEF775267A2183000E485E /* SciChartView.swift */,
+				E3DEF778267A231F000E485E /* AppDelegate.swift */,
+				E3DEF77B267A232A000E485E /* SceneDelegate.swift */,
 				E311B4B126778F6E00D0D020 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -117,6 +131,7 @@
 			packageProductDependencies = (
 				E311B4D42677905900D0D020 /* SwiftUICharts */,
 				E311B4D72677995400D0D020 /* Charts */,
+				E3DEF773267A2150000E485E /* SciChart */,
 			);
 			productName = "ChartExample (iOS)";
 			productReference = E311B4B626778F6E00D0D020 /* ChartExample.app */;
@@ -168,6 +183,7 @@
 			packageReferences = (
 				E311B4D32677905900D0D020 /* XCRemoteSwiftPackageReference "ChartView" */,
 				E311B4D62677995400D0D020 /* XCRemoteSwiftPackageReference "Charts" */,
+				E3DEF772267A2150000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */,
 			);
 			productRefGroup = E311B4B726778F6E00D0D020 /* Products */;
 			projectDirPath = "";
@@ -204,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4C426778F6E00D0D020 /* ContentView.swift in Sources */,
+				E3DEF776267A2183000E485E /* SciChartView.swift in Sources */,
 				E311B4DA267799C000D0D020 /* Line.swift in Sources */,
+				E3DEF779267A231F000E485E /* AppDelegate.swift in Sources */,
 				E311B4C226778F6E00D0D020 /* ChartExampleApp.swift in Sources */,
+				E3DEF77C267A232A000E485E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E311B4C526778F6E00D0D020 /* ContentView.swift in Sources */,
+				E3DEF777267A2183000E485E /* SciChartView.swift in Sources */,
 				E311B4DB267799C000D0D020 /* Line.swift in Sources */,
+				E3DEF77A267A231F000E485E /* AppDelegate.swift in Sources */,
 				E311B4C326778F6E00D0D020 /* ChartExampleApp.swift in Sources */,
+				E3DEF77D267A232A000E485E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +497,14 @@
 				minimumVersion = 4.0.1;
 			};
 		};
+		E3DEF772267A2150000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ABTSoftware/SciChart-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -487,6 +517,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E311B4D62677995400D0D020 /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
+		};
+		E3DEF773267A2150000E485E /* SciChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E3DEF772267A2150000E485E /* XCRemoteSwiftPackageReference "SciChart-SP" */;
+			productName = SciChart;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
